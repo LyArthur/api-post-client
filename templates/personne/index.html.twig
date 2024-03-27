@@ -5,6 +5,8 @@
 {% block body %}
 <h1>Créer une personne</h1>
     {{ form_start(form) }}
-    <button type="submit">Valider</button>
+        {{ form_row(form.prenom) }}
+        {{ form_row(form.nom) }}
+    <button class="btn btn_primary" type="submit">Valider</button>
     {{ form_end(form) }}
 {% endblock %}

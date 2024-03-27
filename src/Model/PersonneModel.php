@@ -2,9 +2,13 @@
 
 namespace App\Model;
 
+use Symfony\Component\Validator\Constraints as Assert;
+
 class PersonneModel
 {
+    #[Assert\NotBlank]
     private ?string $nom = null;
+    #[Assert\NotBlank]
     private ?string $prenom = null;
 
     public function getNom(): ?string

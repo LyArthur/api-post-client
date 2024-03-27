@@ -17,7 +17,7 @@ class PostController extends AbstractController
     public function index(ApiPosts $apiPosts): Response
     {
 
-        $posts = $apiPosts->getPosts();
+        dd($posts = $apiPosts->getPosts());
 
 
         return $this->render('post/index.html.twig', [

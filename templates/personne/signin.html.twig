@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PersonneController!{% endblock %}
+
+{% block body %}
+	<h1>Créer une personne</h1>
+	{{ form_start(form) }}
+	{{ form_row(form.email) }}
+	{{ form_row(form.mdp) }}
+	<button class="btn btn_primary" type="submit">Valider</button>
+	{{ form_end(form) }}
+{% endblock %}
